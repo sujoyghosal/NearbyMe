@@ -8,7 +8,7 @@ android {
         packageName "com.sujoyapps.nearbyme.app"
         minSdkVersion 9
         targetSdkVersion 19
-        versionCode 26
+        versionCode 27
         versionName "2.0"
     }
     signingConfigs {

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ff98ff3b"
+        android:gravity="center_horizontal"
+        android:text="TEXT SEARCH"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etTextSearch"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:hint="e.g. restaurants near Sydney Harbor"
+        android:textColor="#ffff33d0"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#ffffd208"
+        android:fontFamily="Calibri"
+        android:gravity="center_horizontal"
+        android:onClick="getPlacesFromTextSearch"
+        android:text="FIND PLACES"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:onClick="returnHome"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageViewShare"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:onClick="performShare"
+            android:src="@drawable/share2" />
+    </LinearLayout>
+</LinearLayout>
